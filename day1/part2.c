@@ -33,12 +33,11 @@ int main()
       }
 
       currentElf = 0;
+      continue;
     }
-    else
-    {
-      currentLine = strtol(buffer, NULL, 10);
-      currentElf += currentLine;
-    }
+
+    currentLine = strtol(buffer, NULL, 10);
+    currentElf += currentLine;
   }
 
   fclose(filePointer);
